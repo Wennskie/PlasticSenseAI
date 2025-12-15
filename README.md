@@ -9,5 +9,6 @@ AI untuk mengenali jenis sampah plastik dari gambar — menggunakan model PyTorc
    ```bash
    pip install flask torch torchvision pillow
 3. Jalankan Backend
+   ```bash
    python app.py
-4. Go Live Pada index.html
+5. Go Live Pada index.html
