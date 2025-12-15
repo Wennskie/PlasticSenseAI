@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Sense - Wujudkan Lingkungan Bebas Sampah Plastik</title>
+    <link rel="icon" type="image/jpeg" href="/Asset/recycle-logo.jpeg">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo-recycle">
+                    <img src="/Asset/recycle-logo.jpeg" alt="Recycle Logo">
+                </div>
+                <h1 class="brand-name">Plastic Sense</h1>
+            </div>
+
+            <div class="nav-right">
+                <button class="user-icon" id="userIcon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="8" r="4" stroke="#1B4332" stroke-width="2"/>
+                        <path d="M6 21C6 17.134 8.68629 14 12 14C15.3137 14 18 17.134 18 21"
+                              stroke="#1B4332" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+
+                <div class="user-dropdown" id="userDropdown">
+                    <div class="user-info">
+                        <h3>Owen</h3>
+                        <p>Owen06@gmail.com</p>
+                        <button class="logout-btn">Keluar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+
+            <section class="hero-section">
+                <h2 class="greeting">Halo Owen</h2>
+                <h1 class="hero-title">Bersama dengan AI, Kita Wujudkan Lingkungan Bebas Sampah Plastik</h1>
+                <p class="hero-subtitle">Upload foto - Biarkan AI mendeteksi secara otomatis</p>
+            </section>
+
+            <div class="content-grid">
+
+                <div class="upload-section">
+                    <h3 class="section-title">Detect, Report, Clean</h3>
+
+                    <div class="upload-box" id="uploadBox">
+                        <div class="upload-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 15V3M12 3L8 7M12 3L16 7"
+                                      stroke="#2D6A4F" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M3 15V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 18V15"
+                                      stroke="#2D6A4F" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <p class="upload-text">Upload foto dari perangkat anda</p>
+
+                    <button class="report-btn" id="reportBtn">Laporkan Sekarang</button>
+
+                    <div id="resultSection" style="display: none; margin-top: 2rem;">
+                        <h3 class="section-title">Hasil Deteksi</h3>
+                        <p id="aiResult" class="hero-subtitle"></p>
+                        <img id="uploadedPreview" style="max-width: 200px; margin-top: 1rem; border-radius: 12px; display: none;">
+                    </div>
+                </div>
+
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <img id="carouselImage" src="" class="carousel-image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
